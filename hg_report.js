@@ -23,7 +23,8 @@ var ratingsCount = ratings.length;
 
 // here the aver customer rating is caluclated then displayed in a h1/ h2 tag
 for (var i = 0; i < ratingsCount; i++){
-    ratingSum += ratings[i]   
+    // added the ratingSum and adds the value and it to a value in the ratings array
+    ratingSum += ratings[i];  
 }
 var ratingsAvg = ratingSum / ratingsCount;
 var ratingReport = " <h1>Customer Reviews</h1> <h2>" + ratingsAvg + " out of 5 stars (" + ratingsCount + " reviews)</h2>";
